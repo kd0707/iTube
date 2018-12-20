@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEFBEEDC5C7F26F9330D0995 /* Pods_iTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784D04393CEED217911818FE /* Pods_iTube.framework */; };
+		D3028F242199884C00EB374D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3028F232199884C00EB374D /* AppDelegate.swift */; };
+		D3028F262199884C00EB374D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3028F252199884C00EB374D /* LoginViewController.swift */; };
+		D3028F292199884C00EB374D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3028F272199884C00EB374D /* Main.storyboard */; };
+		D3028F2B2199884D00EB374D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3028F2A2199884D00EB374D /* Assets.xcassets */; };
+		D3028F2E2199884D00EB374D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3028F2C2199884D00EB374D /* LaunchScreen.storyboard */; };
+		D3028F3621998A8200EB374D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3028F3521998A8200EB374D /* GradientView.swift */; };
+		D3028F392199995900EB374D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3028F382199995800EB374D /* GoogleService-Info.plist */; };
+		D3028F3B21999F4200EB374D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3028F3A21999F4200EB374D /* RegistrationViewController.swift */; };
+		D30719B921AEA6D1004D94F4 /* VideoListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30719B821AEA6D1004D94F4 /* VideoListingModel.swift */; };
+		D308018621A57025007C4359 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308018521A57025007C4359 /* NetworkManager.swift */; };
+		D3080C4A219D3E25004202E8 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C49219D3E25004202E8 /* AlertController.swift */; };
+		D3080C4E219D54A8004202E8 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C4D219D54A8004202E8 /* VideoModel.swift */; };
+		D3080C52219D7D36004202E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C51219D7D36004202E8 /* Constants.swift */; };
+		D3080C55219D8686004202E8 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C54219D8686004202E8 /* FavouriteViewController.swift */; };
+		D3080C58219D9927004202E8 /* iTube.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3080C56219D9927004202E8 /* iTube.xcdatamodeld */; };
+		D3080C5A219D99B1004202E8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3080C59219D99B1004202E8 /* CoreData.framework */; };
+		D3080C5C219E9376004202E8 /* ViewControllerPannable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C5B219E9376004202E8 /* ViewControllerPannable.swift */; };
+		D3080C61219EC1D4004202E8 /* ProcolForCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C60219EC1D4004202E8 /* ProcolForCell.swift */; };
+		D3080C63219ED66A004202E8 /* VideoModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C62219ED66A004202E8 /* VideoModelProtocol.swift */; };
+		D3080C65219EE5B9004202E8 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C64219EE5B9004202E8 /* RoundImageView.swift */; };
+		D30E6E4421A273D60081154F /* APIParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30E6E4321A273D60081154F /* APIParameters.swift */; };
+		D30E6E4621A2AD5C0081154F /* PlayerOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30E6E4521A2AD5C0081154F /* PlayerOverlay.swift */; };
+		D30EC46A21B54C3400DDC26F /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EC46921B54C3400DDC26F /* NetworkManagerProtocol.swift */; };
+		D30EC46C21B79E2400DDC26F /* NotificationHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EC46B21B79E2400DDC26F /* NotificationHandlerProtocol.swift */; };
+		D320DA05219AA3CE00CEAE43 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320DA04219AA3CE00CEAE43 /* ForgotPasswordViewController.swift */; };
+		D320DA07219AA7C300CEAE43 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320DA06219AA7C300CEAE43 /* StringExtension.swift */; };
+		D320DA0B219AB25B00CEAE43 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320DA0A219AB25B00CEAE43 /* FacebookManager.swift */; };
+		D320DA0E219ACC4200CEAE43 /* UserHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320DA0D219ACC4200CEAE43 /* UserHomeViewController.swift */; };
+		D320DA9B219BF8D600CEAE43 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320DA9A219BF8D600CEAE43 /* UITextFieldExtension.swift */; };
+		D320DAA0219C65BE00CEAE43 /* UserTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320DA9F219C65BE00CEAE43 /* UserTabViewController.swift */; };
+		D320DAA8219C719900CEAE43 /* CustomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320DAA7219C719800CEAE43 /* CustomeTableViewCell.swift */; };
+		D320DAAA219C719E00CEAE43 /* CustomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D320DAA9219C719E00CEAE43 /* CustomeTableViewCell.xib */; };
+		D320DAAD219C73F500CEAE43 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320DAAC219C73F500CEAE43 /* PlayerViewController.swift */; };
+		D320DAB3219C747400CEAE43 /* RelatedVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320DAB1219C747400CEAE43 /* RelatedVideoTableViewCell.swift */; };
+		D320DAB4219C747400CEAE43 /* RelatedVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D320DAB2219C747400CEAE43 /* RelatedVideoTableViewCell.xib */; };
+		D371D75721A6866F00038622 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D371D75621A6866F00038622 /* APIHandler.swift */; };
+		D371D75B21A7C12400038622 /* ModelConverterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D371D75A21A7C12400038622 /* ModelConverterProtocol.swift */; };
+		D371D75D21A7C1D100038622 /* ModelConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D371D75C21A7C1D100038622 /* ModelConverter.swift */; };
+		D371D76B21ABFC6A00038622 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D371D76A21ABFC6A00038622 /* SearchTableViewCell.swift */; };
+		D371D76E21ABFF5B00038622 /* VideoSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D371D76D21ABFF5B00038622 /* VideoSearchController.swift */; };
+		D371D77121ACFF7900038622 /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D371D77021ACFF7900038622 /* SearchResultTableViewController.swift */; };
+		D394EFBB21A3E9D00087707E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D394EFBA21A3E9D00087707E /* Player.swift */; };
+		D394EFBE21A41D3B0087707E /* PlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D394EFBD21A41D3B0087707E /* PlayerProtocol.swift */; };
+		D394EFC021A41E650087707E /* PlayerOverlayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D394EFBF21A41E650087707E /* PlayerOverlayProtocol.swift */; };
+		D394EFC221A423530087707E /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D394EFC121A423530087707E /* NetworkConnection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3992EA321C77311002B1F89 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		784D04393CEED217911818FE /* Pods_iTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82654E42CB36DB9C52D7B1D /* Pods-iTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTube/Pods-iTube.release.xcconfig"; sourceTree = "<group>"; };
+		AFA5F6CCE60B3AB0E34B6427 /* Pods-iTube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTube/Pods-iTube.debug.xcconfig"; sourceTree = "<group>"; };
+		D3028F202199884C00EB374D /* iTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3028F232199884C00EB374D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3028F252199884C00EB374D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D3028F282199884C00EB374D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3028F2A2199884D00EB374D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3028F2D2199884D00EB374D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3028F2F2199884D00EB374D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3028F3521998A8200EB374D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		D3028F382199995800EB374D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3028F3A21999F4200EB374D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		D30719B821AEA6D1004D94F4 /* VideoListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListingModel.swift; sourceTree = "<group>"; };
+		D308018521A57025007C4359 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D3080C49219D3E25004202E8 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		D3080C4D219D54A8004202E8 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		D3080C51219D7D36004202E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D3080C54219D8686004202E8 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		D3080C57219D9927004202E8 /* iTube.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTube.xcdatamodel; sourceTree = "<group>"; };
+		D3080C59219D99B1004202E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D3080C5B219E9376004202E8 /* ViewControllerPannable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPannable.swift; sourceTree = "<group>"; };
+		D3080C60219EC1D4004202E8 /* ProcolForCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcolForCell.swift; sourceTree = "<group>"; };
+		D3080C62219ED66A004202E8 /* VideoModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModelProtocol.swift; sourceTree = "<group>"; };
+		D3080C64219EE5B9004202E8 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundImageView.swift; path = ../../../../../Downloads/RoundImageView.swift; sourceTree = "<group>"; };
+		D30E6E4321A273D60081154F /* APIParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParameters.swift; sourceTree = "<group>"; };
+		D30E6E4521A2AD5C0081154F /* PlayerOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerOverlay.swift; sourceTree = "<group>"; };
+		D30EC46921B54C3400DDC26F /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		D30EC46B21B79E2400DDC26F /* NotificationHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandlerProtocol.swift; sourceTree = "<group>"; };
+		D320DA04219AA3CE00CEAE43 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		D320DA06219AA7C300CEAE43 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		D320DA0A219AB25B00CEAE43 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
+		D320DA0D219ACC4200CEAE43 /* UserHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeViewController.swift; sourceTree = "<group>"; };
+		D320DA9A219BF8D600CEAE43 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		D320DA9F219C65BE00CEAE43 /* UserTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabViewController.swift; sourceTree = "<group>"; };
+		D320DAA7219C719800CEAE43 /* CustomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeTableViewCell.swift; sourceTree = "<group>"; };
+		D320DAA9219C719E00CEAE43 /* CustomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomeTableViewCell.xib; sourceTree = "<group>"; };
+		D320DAAC219C73F500CEAE43 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		D320DAB1219C747400CEAE43 /* RelatedVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedVideoTableViewCell.swift; sourceTree = "<group>"; };
+		D320DAB2219C747400CEAE43 /* RelatedVideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RelatedVideoTableViewCell.xib; sourceTree = "<group>"; };
+		D371D75621A6866F00038622 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		D371D75A21A7C12400038622 /* ModelConverterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConverterProtocol.swift; sourceTree = "<group>"; };
+		D371D75C21A7C1D100038622 /* ModelConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConverter.swift; sourceTree = "<group>"; };
+		D371D76A21ABFC6A00038622 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		D371D76D21ABFF5B00038622 /* VideoSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSearchController.swift; sourceTree = "<group>"; };
+		D371D77021ACFF7900038622 /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
+		D394EFBA21A3E9D00087707E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		D394EFBD21A41D3B0087707E /* PlayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProtocol.swift; sourceTree = "<group>"; };
+		D394EFBF21A41E650087707E /* PlayerOverlayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerOverlayProtocol.swift; sourceTree = "<group>"; };
+		D394EFC121A423530087707E /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
+		D3992E9221C77311002B1F89 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D3992E9421C77311002B1F89 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3028F1D2199884C00EB374D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3080C5A219D99B1004202E8 /* CoreData.framework in Frameworks */,
+				AEFBEEDC5C7F26F9330D0995 /* Pods_iTube.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FC19D5343DA6D042D8F3FEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3080C59219D99B1004202E8 /* CoreData.framework */,
+				784D04393CEED217911818FE /* Pods_iTube.framework */,
+				D3992E9221C77311002B1F89 /* UserNotifications.framework */,
+				D3992E9421C77311002B1F89 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C84D8F717C9DDD83A4512AD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFA5F6CCE60B3AB0E34B6427 /* Pods-iTube.debug.xcconfig */,
+				A82654E42CB36DB9C52D7B1D /* Pods-iTube.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3028F172199884C00EB374D = {
+			isa = PBXGroup;
+			children = (
+				D3028F222199884C00EB374D /* iTube */,
+				D3028F212199884C00EB374D /* Products */,
+				C84D8F717C9DDD83A4512AD9 /* Pods */,
+				2FC19D5343DA6D042D8F3FEE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3028F212199884C00EB374D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3028F202199884C00EB374D /* iTube.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3028F222199884C00EB374D /* iTube */ = {
+			isa = PBXGroup;
+			children = (
+				D3080C48219D37AF004202E8 /* Login */,
+				D320DA0C219ACC2D00CEAE43 /* UserHome */,
+				D3080C53219D8659004202E8 /* FavouriteTab */,
+				D320DAAB219C737700CEAE43 /* PlayerController */,
+				D371D76621ABF18E00038622 /* VideoSearch */,
+				D371D76F21ACFF5400038622 /* VideoSearchResult */,
+				D30E6E4721A2AE2B0081154F /* Overlay */,
+				D394EFBC21A41CFA0087707E /* Player */,
+				D3028F3721998A8C00EB374D /* Resource */,
+				D3080C5D219EB6AD004202E8 /* Protocols */,
+				D320DA09219AB24100CEAE43 /* Social Manager */,
+				D320DA08219AA7CD00CEAE43 /* Registration */,
+				D320DA03219AA3B500CEAE43 /* Forgot Password */,
+				D30EC47821BE384700DDC26F /* Supported Models */,
+				D30EC46821B549F200DDC26F /* Supported Files */,
+			);
+			path = iTube;
+			sourceTree = "<group>";
+		};
+		D3028F3721998A8C00EB374D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D3080C51219D7D36004202E8 /* Constants.swift */,
+				D3080C64219EE5B9004202E8 /* RoundImageView.swift */,
+				D3080C5B219E9376004202E8 /* ViewControllerPannable.swift */,
+				D320DA06219AA7C300CEAE43 /* StringExtension.swift */,
+				D3028F3521998A8200EB374D /* GradientView.swift */,
+				D320DA9A219BF8D600CEAE43 /* UITextFieldExtension.swift */,
+				D3080C49219D3E25004202E8 /* AlertController.swift */,
+				D394EFC121A423530087707E /* NetworkConnection.swift */,
+				D308018521A57025007C4359 /* NetworkManager.swift */,
+				D371D75621A6866F00038622 /* APIHandler.swift */,
+				D371D75C21A7C1D100038622 /* ModelConverter.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D30719B721AEA630004D94F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D30719BA21AFBB4C004D94F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3028F252199884C00EB374D /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D3080C48219D37AF004202E8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D30719BA21AFBB4C004D94F4 /* Controller */,
+				D30719B721AEA630004D94F4 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D3080C53219D8659004202E8 /* FavouriteTab */ = {
+			isa = PBXGroup;
+			children = (
+				D3080C54219D8686004202E8 /* FavouriteViewController.swift */,
+			);
+			path = FavouriteTab;
+			sourceTree = "<group>";
+		};
+		D3080C5D219EB6AD004202E8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D3080C60219EC1D4004202E8 /* ProcolForCell.swift */,
+				D3080C62219ED66A004202E8 /* VideoModelProtocol.swift */,
+				D371D75A21A7C12400038622 /* ModelConverterProtocol.swift */,
+				D30EC46921B54C3400DDC26F /* NetworkManagerProtocol.swift */,
+				D30EC46B21B79E2400DDC26F /* NotificationHandlerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D30E6E4721A2AE2B0081154F /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				D30E6E4521A2AD5C0081154F /* PlayerOverlay.swift */,
+				D394EFBF21A41E650087707E /* PlayerOverlayProtocol.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		D30EC46821B549F200DDC26F /* Supported Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3028F232199884C00EB374D /* AppDelegate.swift */,
+				D3028F272199884C00EB374D /* Main.storyboard */,
+				D3028F2A2199884D00EB374D /* Assets.xcassets */,
+				D3028F382199995800EB374D /* GoogleService-Info.plist */,
+				D3028F2C2199884D00EB374D /* LaunchScreen.storyboard */,
+				D3028F2F2199884D00EB374D /* Info.plist */,
+				D3080C56219D9927004202E8 /* iTube.xcdatamodeld */,
+				D320DA9F219C65BE00CEAE43 /* UserTabViewController.swift */,
+			);
+			path = "Supported Files";
+			sourceTree = "<group>";
+		};
+		D30EC47821BE384700DDC26F /* Supported Models */ = {
+			isa = PBXGroup;
+			children = (
+				D30719B821AEA6D1004D94F4 /* VideoListingModel.swift */,
+			);
+			path = "Supported Models";
+			sourceTree = "<group>";
+		};
+		D320DA03219AA3B500CEAE43 /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				D320DA04219AA3CE00CEAE43 /* ForgotPasswordViewController.swift */,
+			);
+			path = "Forgot Password";
+			sourceTree = "<group>";
+		};
+		D320DA08219AA7CD00CEAE43 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				D3028F3A21999F4200EB374D /* RegistrationViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		D320DA09219AB24100CEAE43 /* Social Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D320DA0A219AB25B00CEAE43 /* FacebookManager.swift */,
+			);
+			path = "Social Manager";
+			sourceTree = "<group>";
+		};
+		D320DA0C219ACC2D00CEAE43 /* UserHome */ = {
+			isa = PBXGroup;
+			children = (
+				D320DAA3219C6E4A00CEAE43 /* Model */,
+				D320DAA2219C6E3500CEAE43 /* View */,
+				D320DAA4219C6E5100CEAE43 /* Controller */,
+			);
+			path = UserHome;
+			sourceTree = "<group>";
+		};
+		D320DAA2219C6E3500CEAE43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D320DAA7219C719800CEAE43 /* CustomeTableViewCell.swift */,
+				D320DAA9219C719E00CEAE43 /* CustomeTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D320DAA3219C6E4A00CEAE43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3080C4D219D54A8004202E8 /* VideoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D320DAA4219C6E5100CEAE43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D320DA0D219ACC4200CEAE43 /* UserHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D320DAAB219C737700CEAE43 /* PlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				D320DAAF219C742900CEAE43 /* Model */,
+				D320DAAE219C741700CEAE43 /* View */,
+				D320DAB0219C742F00CEAE43 /* Controller */,
+			);
+			path = PlayerController;
+			sourceTree = "<group>";
+		};
+		D320DAAE219C741700CEAE43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D320DAB1219C747400CEAE43 /* RelatedVideoTableViewCell.swift */,
+				D320DAB2219C747400CEAE43 /* RelatedVideoTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D320DAAF219C742900CEAE43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D30E6E4321A273D60081154F /* APIParameters.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D320DAB0219C742F00CEAE43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D320DAAC219C73F500CEAE43 /* PlayerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D371D76621ABF18E00038622 /* VideoSearch */ = {
+			isa = PBXGroup;
+			children = (
+				D371D76C21ABFCD400038622 /* Controller */,
+				D371D76921ABFC3D00038622 /* View */,
+			);
+			path = VideoSearch;
+			sourceTree = "<group>";
+		};
+		D371D76921ABFC3D00038622 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D371D76A21ABFC6A00038622 /* SearchTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D371D76C21ABFCD400038622 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D371D76D21ABFF5B00038622 /* VideoSearchController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D371D76F21ACFF5400038622 /* VideoSearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				D371D77021ACFF7900038622 /* SearchResultTableViewController.swift */,
+			);
+			path = VideoSearchResult;
+			sourceTree = "<group>";
+		};
+		D394EFBC21A41CFA0087707E /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				D394EFBA21A3E9D00087707E /* Player.swift */,
+				D394EFBD21A41D3B0087707E /* PlayerProtocol.swift */,
+			);
+			name = Player;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3028F1F2199884C00EB374D /* iTube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3028F322199884D00EB374D /* Build configuration list for PBXNativeTarget "iTube" */;
+			buildPhases = (
+				4876C49762949A66257CD9EC /* [CP] Check Pods Manifest.lock */,
+				D3028F1C2199884C00EB374D /* Sources */,
+				D3028F1D2199884C00EB374D /* Frameworks */,
+				D3028F1E2199884C00EB374D /* Resources */,
+				53A31A4116D9B368ADF525E8 /* [CP] Embed Pods Frameworks */,
+				86035DA709DB09B1C0BC35C5 /* [CP] Copy Pods Resources */,
+				D3992EA321C77311002B1F89 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTube;
+			productName = iTube;
+			productReference = D3028F202199884C00EB374D /* iTube.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3028F182199884C00EB374D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Kamaluddin Khan";
+				TargetAttributes = {
+					D3028F1F2199884C00EB374D = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D3028F1B2199884C00EB374D /* Build configuration list for PBXProject "iTube" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3028F172199884C00EB374D;
+			productRefGroup = D3028F212199884C00EB374D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3028F1F2199884C00EB374D /* iTube */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3028F1E2199884C00EB374D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3028F2E2199884D00EB374D /* LaunchScreen.storyboard in Resources */,
+				D3028F2B2199884D00EB374D /* Assets.xcassets in Resources */,
+				D320DAAA219C719E00CEAE43 /* CustomeTableViewCell.xib in Resources */,
+				D320DAB4219C747400CEAE43 /* RelatedVideoTableViewCell.xib in Resources */,
+				D3028F292199884C00EB374D /* Main.storyboard in Resources */,
+				D3028F392199995900EB374D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4876C49762949A66257CD9EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTube-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53A31A4116D9B368ADF525E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTube/Pods-iTube-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTube/Pods-iTube-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86035DA709DB09B1C0BC35C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTube/Pods-iTube-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTube/Pods-iTube-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3028F1C2199884C00EB374D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D320DA0B219AB25B00CEAE43 /* FacebookManager.swift in Sources */,
+				D3080C52219D7D36004202E8 /* Constants.swift in Sources */,
+				D3080C61219EC1D4004202E8 /* ProcolForCell.swift in Sources */,
+				D394EFC021A41E650087707E /* PlayerOverlayProtocol.swift in Sources */,
+				D320DAA0219C65BE00CEAE43 /* UserTabViewController.swift in Sources */,
+				D3028F262199884C00EB374D /* LoginViewController.swift in Sources */,
+				D371D76E21ABFF5B00038622 /* VideoSearchController.swift in Sources */,
+				D371D77121ACFF7900038622 /* SearchResultTableViewController.swift in Sources */,
+				D3080C55219D8686004202E8 /* FavouriteViewController.swift in Sources */,
+				D3080C4E219D54A8004202E8 /* VideoModel.swift in Sources */,
+				D320DA05219AA3CE00CEAE43 /* ForgotPasswordViewController.swift in Sources */,
+				D3080C63219ED66A004202E8 /* VideoModelProtocol.swift in Sources */,
+				D3080C65219EE5B9004202E8 /* RoundImageView.swift in Sources */,
+				D308018621A57025007C4359 /* NetworkManager.swift in Sources */,
+				D3080C5C219E9376004202E8 /* ViewControllerPannable.swift in Sources */,
+				D30E6E4621A2AD5C0081154F /* PlayerOverlay.swift in Sources */,
+				D30E6E4421A273D60081154F /* APIParameters.swift in Sources */,
+				D30719B921AEA6D1004D94F4 /* VideoListingModel.swift in Sources */,
+				D3080C4A219D3E25004202E8 /* AlertController.swift in Sources */,
+				D320DAAD219C73F500CEAE43 /* PlayerViewController.swift in Sources */,
+				D320DA07219AA7C300CEAE43 /* StringExtension.swift in Sources */,
+				D371D75D21A7C1D100038622 /* ModelConverter.swift in Sources */,
+				D320DA9B219BF8D600CEAE43 /* UITextFieldExtension.swift in Sources */,
+				D30EC46A21B54C3400DDC26F /* NetworkManagerProtocol.swift in Sources */,
+				D394EFBB21A3E9D00087707E /* Player.swift in Sources */,
+				D320DAB3219C747400CEAE43 /* RelatedVideoTableViewCell.swift in Sources */,
+				D3080C58219D9927004202E8 /* iTube.xcdatamodeld in Sources */,
+				D3028F242199884C00EB374D /* AppDelegate.swift in Sources */,
+				D371D75B21A7C12400038622 /* ModelConverterProtocol.swift in Sources */,
+				D3028F3B21999F4200EB374D /* RegistrationViewController.swift in Sources */,
+				D394EFBE21A41D3B0087707E /* PlayerProtocol.swift in Sources */,
+				D320DA0E219ACC4200CEAE43 /* UserHomeViewController.swift in Sources */,
+				D394EFC221A423530087707E /* NetworkConnection.swift in Sources */,
+				D30EC46C21B79E2400DDC26F /* NotificationHandlerProtocol.swift in Sources */,
+				D3028F3621998A8200EB374D /* GradientView.swift in Sources */,
+				D320DAA8219C719900CEAE43 /* CustomeTableViewCell.swift in Sources */,
+				D371D75721A6866F00038622 /* APIHandler.swift in Sources */,
+				D371D76B21ABFC6A00038622 /* SearchTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3028F272199884C00EB374D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3028F282199884C00EB374D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3028F2C2199884D00EB374D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3028F2D2199884D00EB374D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3028F302199884D00EB374D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3028F312199884D00EB374D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3028F332199884D00EB374D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA5F6CCE60B3AB0E34B6427 /* Pods-iTube.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CNVL66Z7D3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/iTube/Supported Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttn.session.iTube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D3028F342199884D00EB374D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82654E42CB36DB9C52D7B1D /* Pods-iTube.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CNVL66Z7D3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/iTube/Supported Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttn.session.iTube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3028F1B2199884C00EB374D /* Build configuration list for PBXProject "iTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3028F302199884D00EB374D /* Debug */,
+				D3028F312199884D00EB374D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3028F322199884D00EB374D /* Build configuration list for PBXNativeTarget "iTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3028F332199884D00EB374D /* Debug */,
+				D3028F342199884D00EB374D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3080C56219D9927004202E8 /* iTube.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3080C57219D9927004202E8 /* iTube.xcdatamodel */,
+			);
+			currentVersion = D3080C57219D9927004202E8 /* iTube.xcdatamodel */;
+			path = iTube.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D3028F182199884C00EB374D /* Project object */;
+}
