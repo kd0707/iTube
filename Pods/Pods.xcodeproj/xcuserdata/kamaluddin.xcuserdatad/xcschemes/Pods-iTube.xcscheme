@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3C8442FE32FFF332C546087599661ED1"
+               BlueprintIdentifier = "2E389684EB26CA070F938A8679F77AFE"
                BuildableName = "Pods_iTube.framework"
                BlueprintName = "Pods-iTube"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3C8442FE32FFF332C546087599661ED1"
+            BlueprintIdentifier = "2E389684EB26CA070F938A8679F77AFE"
             BuildableName = "Pods_iTube.framework"
             BlueprintName = "Pods-iTube"
             ReferencedContainer = "container:Pods.xcodeproj">

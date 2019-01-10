@@ -27,7 +27,6 @@
 		D3080C5C219E9376004202E8 /* ViewControllerPannable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C5B219E9376004202E8 /* ViewControllerPannable.swift */; };
 		D3080C61219EC1D4004202E8 /* ProcolForCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C60219EC1D4004202E8 /* ProcolForCell.swift */; };
 		D3080C63219ED66A004202E8 /* VideoModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C62219ED66A004202E8 /* VideoModelProtocol.swift */; };
-		D3080C65219EE5B9004202E8 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3080C64219EE5B9004202E8 /* RoundImageView.swift */; };
 		D30E6E4421A273D60081154F /* APIParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30E6E4321A273D60081154F /* APIParameters.swift */; };
 		D30E6E4621A2AD5C0081154F /* PlayerOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30E6E4521A2AD5C0081154F /* PlayerOverlay.swift */; };
 		D30EC46A21B54C3400DDC26F /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EC46921B54C3400DDC26F /* NetworkManagerProtocol.swift */; };
@@ -53,6 +52,7 @@
 		D394EFBE21A41D3B0087707E /* PlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D394EFBD21A41D3B0087707E /* PlayerProtocol.swift */; };
 		D394EFC021A41E650087707E /* PlayerOverlayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D394EFBF21A41E650087707E /* PlayerOverlayProtocol.swift */; };
 		D394EFC221A423530087707E /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D394EFC121A423530087707E /* NetworkConnection.swift */; };
+		D3C5033421E72490003DC410 /* DiskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C5033321E72490003DC410 /* DiskStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -93,7 +93,6 @@
 		D3080C5B219E9376004202E8 /* ViewControllerPannable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPannable.swift; sourceTree = "<group>"; };
 		D3080C60219EC1D4004202E8 /* ProcolForCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcolForCell.swift; sourceTree = "<group>"; };
 		D3080C62219ED66A004202E8 /* VideoModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModelProtocol.swift; sourceTree = "<group>"; };
-		D3080C64219EE5B9004202E8 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundImageView.swift; path = ../../../../../Downloads/RoundImageView.swift; sourceTree = "<group>"; };
 		D30E6E4321A273D60081154F /* APIParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParameters.swift; sourceTree = "<group>"; };
 		D30E6E4521A2AD5C0081154F /* PlayerOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerOverlay.swift; sourceTree = "<group>"; };
 		D30EC46921B54C3400DDC26F /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
@@ -121,6 +120,7 @@
 		D394EFC121A423530087707E /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
 		D3992E9221C77311002B1F89 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		D3992E9421C77311002B1F89 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		D3C5033321E72490003DC410 /* DiskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				D3080C51219D7D36004202E8 /* Constants.swift */,
-				D3080C64219EE5B9004202E8 /* RoundImageView.swift */,
 				D3080C5B219E9376004202E8 /* ViewControllerPannable.swift */,
 				D320DA06219AA7C300CEAE43 /* StringExtension.swift */,
 				D3028F3521998A8200EB374D /* GradientView.swift */,
@@ -210,6 +209,7 @@
 				D308018521A57025007C4359 /* NetworkManager.swift */,
 				D371D75621A6866F00038622 /* APIHandler.swift */,
 				D371D75C21A7C1D100038622 /* ModelConverter.swift */,
+				D3C5033321E72490003DC410 /* DiskStatus.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -541,7 +541,6 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iTube/Pods-iTube-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -555,7 +554,6 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -605,12 +603,12 @@
 				D320DAA0219C65BE00CEAE43 /* UserTabViewController.swift in Sources */,
 				D3028F262199884C00EB374D /* LoginViewController.swift in Sources */,
 				D371D76E21ABFF5B00038622 /* VideoSearchController.swift in Sources */,
+				D3C5033421E72490003DC410 /* DiskStatus.swift in Sources */,
 				D371D77121ACFF7900038622 /* SearchResultTableViewController.swift in Sources */,
 				D3080C55219D8686004202E8 /* FavouriteViewController.swift in Sources */,
 				D3080C4E219D54A8004202E8 /* VideoModel.swift in Sources */,
 				D320DA05219AA3CE00CEAE43 /* ForgotPasswordViewController.swift in Sources */,
 				D3080C63219ED66A004202E8 /* VideoModelProtocol.swift in Sources */,
-				D3080C65219EE5B9004202E8 /* RoundImageView.swift in Sources */,
 				D308018621A57025007C4359 /* NetworkManager.swift in Sources */,
 				D3080C5C219E9376004202E8 /* ViewControllerPannable.swift in Sources */,
 				D30E6E4621A2AD5C0081154F /* PlayerOverlay.swift in Sources */,
