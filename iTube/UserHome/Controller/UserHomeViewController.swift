@@ -23,9 +23,12 @@ class UserHomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Total Space",DiskStatus.totalDiskSpace)
+        print("Total Space: ",DiskStatus.totalDiskSpace)
 
-        print("Free Space",DiskStatus.freeDiskSpace)
+        print("Free Space: ",DiskStatus.freeDiskSpace)
+        
+        print("Used Space: ",DiskStatus.usedDiskSpace)
+
         
         
         do {

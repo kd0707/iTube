@@ -166,7 +166,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
      func buttonCreateNotification() {
         
-        
         //creating the notification content
         let content = UNMutableNotificationContent()
         
@@ -188,7 +187,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 }
-
-
-
-

@@ -10,15 +10,14 @@ import Foundation
 
 class DiskStatus {
     
-    //MARK: Formatter MB only
-    class func MBFormatter(_ bytes: Int64) -> String {
-        let formatter = ByteCountFormatter()
-        formatter.allowedUnits = ByteCountFormatter.Units.useMB
-        formatter.countStyle = ByteCountFormatter.CountStyle.decimal
-        formatter.includesUnit = false
-        return formatter.string(fromByteCount: bytes) as String
-    }
-    
+//    //MARK: Formatter MB only
+//    class func MBFormatter(_ bytes: Int64) -> String {
+//        let formatter = ByteCountFormatter()
+//        formatter.allowedUnits = ByteCountFormatter.Units.useMB
+//        formatter.countStyle = ByteCountFormatter.CountStyle.decimal
+//        formatter.includesUnit = false
+//        return formatter.string(fromByteCount: bytes) as String
+//    }
     
     //MARK: Get String Value
     class var totalDiskSpace:String {
@@ -39,9 +38,8 @@ class DiskStatus {
         }
     }
     
-    
     //MARK: Get raw value
-    class var totalDiskSpaceInBytes:Int64 {
+    class var totalDiskSpaceInBytes: Int64 {
         get {
             do {
                 let systemAttributes = try FileManager.default.attributesOfFileSystem(forPath: NSHomeDirectory() as String)
@@ -53,7 +51,7 @@ class DiskStatus {
         }
     }
     
-    class var freeDiskSpaceInBytes:Int64 {
+    class var freeDiskSpaceInBytes: Int64 {
         get {
             do {
                 let systemAttributes = try FileManager.default.attributesOfFileSystem(forPath: NSHomeDirectory() as String)
@@ -65,7 +63,7 @@ class DiskStatus {
         }
     }
     
-    class var usedDiskSpaceInBytes:Int64 {
+    class var usedDiskSpaceInBytes: Int64 {
         get {
             let usedSpace = totalDiskSpaceInBytes - freeDiskSpaceInBytes
             return usedSpace

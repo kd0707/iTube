@@ -19,6 +19,7 @@ class APIHandler {
             
             Alamofire.request(url).responseJSON { (dataResponse) in
                 print("Result: \(dataResponse.result)")
+                print(dataResponse.value)
                 // response serialization result
                 if let json = dataResponse.result.value {
                     let videoData = json as? Parameters
